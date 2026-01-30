@@ -155,9 +155,12 @@ next-env.d.ts
 backend/*.db
 backend/*.sqlite
 
-# PostgreSQL dumps
-*.sql
+# PostgreSQL dumps (but keep schema files)
 *.dump
+*-dump.sql
+backup-*.sql
+# Keep schema files in PRPs/
+!PRPs/*.sql
 
 # ============
 # IDE/EDITORS
